@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap');
+
+@import "variables/vars";
+@import "slick";
+@import "cards";
+@import "normalize";
+@import "navigation";
+@import "banner";
+@import "main-content";
+@import "footer";
+
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+    margin: 0 auto;
+}
+
+h1,h2{
+    font-size: 1.6em;
+    color: #000000d9;
+}
+
+h3,h4{
+    font-size: 1.2em;
+}
+
+h5,h6{
+    font-size: 1.0em;
+}
+
+
+p,a,qoute,span,blockquote{
+    font-size: 1.2em;
+    // color: #7b7b7bee !important;
+}
+
+a{
+    color:#000 !important;
+}
+
+p{
+    line-height: 1.7;
+    margin: 2.2em 0 !important;
+    color: #504e4e;
+}
+label{
+    color: #636262;
+}
+
+button{
+    
+    background-color: #f1ae35;
+    border: none;
+    padding: 9% 20px;
+    margin-top: 6%;
+    border-radius: 50px;
+
+    a{
+        color: #fff !important;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 15px;
+    }
+}
+
+
+
+/*Grid Elements*/
+
+.grid-two-columns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    margin: 0 5%;
+    align-items: center;
+}
+
+.grid-template-four-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.grid-template-three-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap:2.3%;
+}
+
+.container-gt{
+    max-width: 1400px;
+    margin:0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+/*
+==================
+    grid-form-data
+==================
+*/
+.grid-form-data{
+    display: grid;
+    grid-template-columns: 1fr 1fr 20%;
+    gap: 19px;
+    justify-content: center;
+    align-items: center;
+    
+    .grid-child{
+        label{
+            margin-bottom: 8px;
+            display: block;
+        }
+    }
+} 
+
+.bookable--tour-btn{
+    
+    padding: 7% 17%;
+    color: #ffff;
+    border-radius: 0;
+    text-align: center;
+    margin-top: 25px;
+    background-image: linear-gradient(90deg,#ff9557,#f6a944);
+    font-size: 14px;
+
+    &:hover{
+        cursor: pointer;
+    }
+}

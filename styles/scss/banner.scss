@@ -1,0 +1,79 @@
+
+.video-banner{
+    // position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+#myVideo{
+	position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.heading-banner-section{ 
+    background: #040404bd;
+    position: absolute;
+    bottom: 0;
+    color: #f1f1f1;
+    width: 100%;
+    height: 110vh;
+    padding: 20px;
+    display: flex;
+    top: 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .heading-letters{
+        font-size: 4vw;
+        margin: 0;
+        line-height: 1.2;
+        font-weight: 700;
+        text-align: center;
+        
+    	span{
+    		color: #ffff;
+            display: block;
+            
+            &:nth-child(2){
+                color: $secondary-color-defs;
+            }
+    	}
+    }
+
+    .subheading-tag{        
+        margin: 0 !important;
+        color: #ffffff94;
+        width: 58%;
+        margin-top: 2% !important;
+        text-align: center;
+    }
+}
+
+.tabs--bookable{
+    background: #eee;
+    padding: 3%;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    margin: 0 5%;
+    border-radius: 5px;
+    transform: translateY(62%);
+}           
+
+/**
+*
+    @@@ overide ant date-picker....
+*
+**/
+
+.ant-picker,
+.ant-space.ant-space-horizontal,
+.ant-space-item
+{
+    width: 100% !important;
+    max-width: 100% !important ;
+}
