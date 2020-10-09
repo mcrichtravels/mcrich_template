@@ -1,5 +1,6 @@
 const path = require('path')
 const withVideos = require('next-videos')
+const withImages = require('next-images')
 
 const withSass = require('@zeit/next-sass');
 const withCSS = require("@zeit/next-css");
@@ -10,7 +11,12 @@ const withCSS = require("@zeit/next-css");
 //     includePaths: [path.join(__dirname, 'styles')],
 //   },
 // }
-
+module.exports = withImages({
+    assetPrefix: '',
+    webpack(config, options) {
+      return config
+    }
+});
 module.exports = withCSS(withSass({
     webpack (config, options) {
         config.module.rules.push({

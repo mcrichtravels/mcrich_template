@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-const IconTabs = ()=>{
+const IconTabs = (props)=>{
     return(
         <> 
             <div className="grid-child">
